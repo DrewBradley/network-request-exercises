@@ -52,7 +52,7 @@ const postUser = () => {
       })
     })
     .then(response => response.json())
-    .then(data => getUser());
+    .then(data => getUser(data));
   resetInputs();
 }
 
@@ -61,10 +61,11 @@ const deleteUser = () => {
       method: 'DELETE',
     })
     .then(response => response.json())
-    .then(data => retrieveData());
+    .then(data => getUser(data));
   resetInputs();
 }
 
 window.addEventListener('load', resetInputs)
 postButton.addEventListener('click', postUser)
+deleteButton.addEventListener('click', deleteUser)
 getButton.addEventListener('click', getUser)

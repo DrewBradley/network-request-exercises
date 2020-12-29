@@ -67,4 +67,5 @@ const deleteUser = () => {
 
 window.addEventListener('load', resetInputs)
 postButton.addEventListener('click', postUser)
+deleteButton.addEventListener('click', deleteUser)
 getButton.addEventListener('click', getUser)

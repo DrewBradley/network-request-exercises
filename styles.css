@@ -11,7 +11,12 @@ body {
   height: 100px;
   width: 90%;
 }
-
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
 .inputs {
   background-color: rgb(155, 155, 155);
   padding: 5%;
